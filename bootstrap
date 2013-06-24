@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+sudo apt-get update
+sudo apt-get -y install linux-image-extra-`uname -r`
+sudo apt-get -y install software-properties-common
+sudo add-apt-repository ppa:dotcloud/lxc-docker
+sudo apt-get update
+sudo apt-get -y install lxc-docker
